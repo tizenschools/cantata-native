@@ -1,0 +1,46 @@
+#!/bin/sh
+
+SCRIPT=`readlink -f $0`
+
+DIR_HOME=`dirname $SCRIPT`
+
+if [ -n "$1" ]
+then
+    TARGET=$1
+fi
+
+export PATH="$PATH:/home/mustafa/tizen-sdk/tools/i386-linux-gnueabi-gcc-4.5/bin"
+
+cd ./Debug-Tizen-Emulator
+
+
+which i386-linux-gnueabi-g++
+
+i386-linux-gnueabi-g++ -I"pch" -D_DEBUG -I"/home/mustafa/work/tizenschools/cantata-native/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fPIE --sysroot="/home/mustafa/tizen-sdk/platforms/tizen2.0/rootstraps/tizen-emulator-2.0.cpp.partner" -I"/home/mustafa/tizen-sdk/platforms/tizen2.0/rootstraps/tizen-emulator-2.0.cpp.partner/usr/include" -I"/home/mustafa/tizen-sdk/platforms/tizen2.0/rootstraps/tizen-emulator-2.0.cpp.partner/usr/include/libxml2" -I"/home/mustafa/tizen-sdk/library" -I"/home/mustafa/tizen-sdk/platforms/tizen2.0/rootstraps/tizen-emulator-2.0.cpp.partner/usr/include/osp" -D_APP_LOG -MMD -MP -MF"src/cantata.d" -MT"src/cantata.d" -o "src/cantata.o" "../src/cantata.cpp"
+
+ 
+i386-linux-gnueabi-g++ -I"pch" -D_DEBUG -I"/home/mustafa/work/tizenschools/cantata-native/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fPIE --sysroot="/home/mustafa/tizen-sdk/platforms/tizen2.0/rootstraps/tizen-emulator-2.0.cpp.partner" -I"/home/mustafa/tizen-sdk/platforms/tizen2.0/rootstraps/tizen-emulator-2.0.cpp.partner/usr/include" -I"/home/mustafa/tizen-sdk/platforms/tizen2.0/rootstraps/tizen-emulator-2.0.cpp.partner/usr/include/libxml2" -I"/home/mustafa/tizen-sdk/library" -I"/home/mustafa/tizen-sdk/platforms/tizen2.0/rootstraps/tizen-emulator-2.0.cpp.partner/usr/include/osp" -D_APP_LOG -MMD -MP -MF"src/cantataEntry.d" -MT"src/cantataEntry.d" -o "src/cantataEntry.o" "../src/cantataEntry.cpp"
+
+i386-linux-gnueabi-g++ -I"pch" -D_DEBUG -I"/home/mustafa/work/tizenschools/cantata-native/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fPIE --sysroot="/home/mustafa/tizen-sdk/platforms/tizen2.0/rootstraps/tizen-emulator-2.0.cpp.partner" -I"/home/mustafa/tizen-sdk/platforms/tizen2.0/rootstraps/tizen-emulator-2.0.cpp.partner/usr/include" -I"/home/mustafa/tizen-sdk/platforms/tizen2.0/rootstraps/tizen-emulator-2.0.cpp.partner/usr/include/libxml2" -I"/home/mustafa/tizen-sdk/library" -I"/home/mustafa/tizen-sdk/platforms/tizen2.0/rootstraps/tizen-emulator-2.0.cpp.partner/usr/include/osp" -D_APP_LOG -MMD -MP -MF"src/cantataFormFactory.d" -MT"src/cantataFormFactory.d" -o "src/cantataFormFactory.o" "../src/cantataFormFactory.cpp"
+
+ 
+i386-linux-gnueabi-g++ -I"pch" -D_DEBUG -I"/home/mustafa/work/tizenschools/cantata-native/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fPIE --sysroot="/home/mustafa/tizen-sdk/platforms/tizen2.0/rootstraps/tizen-emulator-2.0.cpp.partner" -I"/home/mustafa/tizen-sdk/platforms/tizen2.0/rootstraps/tizen-emulator-2.0.cpp.partner/usr/include" -I"/home/mustafa/tizen-sdk/platforms/tizen2.0/rootstraps/tizen-emulator-2.0.cpp.partner/usr/include/libxml2" -I"/home/mustafa/tizen-sdk/library" -I"/home/mustafa/tizen-sdk/platforms/tizen2.0/rootstraps/tizen-emulator-2.0.cpp.partner/usr/include/osp" -D_APP_LOG -MMD -MP -MF"src/cantataFrame.d" -MT"src/cantataFrame.d" -o "src/cantataFrame.o" "../src/cantataFrame.cpp"
+
+i386-linux-gnueabi-g++ -I"pch" -D_DEBUG -I"/home/mustafa/work/tizenschools/cantata-native/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fPIE --sysroot="/home/mustafa/tizen-sdk/platforms/tizen2.0/rootstraps/tizen-emulator-2.0.cpp.partner" -I"/home/mustafa/tizen-sdk/platforms/tizen2.0/rootstraps/tizen-emulator-2.0.cpp.partner/usr/include" -I"/home/mustafa/tizen-sdk/platforms/tizen2.0/rootstraps/tizen-emulator-2.0.cpp.partner/usr/include/libxml2" -I"/home/mustafa/tizen-sdk/library" -I"/home/mustafa/tizen-sdk/platforms/tizen2.0/rootstraps/tizen-emulator-2.0.cpp.partner/usr/include/osp" -D_APP_LOG -MMD -MP -MF"src/cantataMainForm.d" -MT"src/cantataMainForm.d" -o "src/cantataMainForm.o" "../src/cantataMainForm.cpp"
+ 
+i386-linux-gnueabi-g++ -I"pch" -D_DEBUG -I"/home/mustafa/work/tizenschools/cantata-native/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fPIE --sysroot="/home/mustafa/tizen-sdk/platforms/tizen2.0/rootstraps/tizen-emulator-2.0.cpp.partner" -I"/home/mustafa/tizen-sdk/platforms/tizen2.0/rootstraps/tizen-emulator-2.0.cpp.partner/usr/include" -I"/home/mustafa/tizen-sdk/platforms/tizen2.0/rootstraps/tizen-emulator-2.0.cpp.partner/usr/include/libxml2" -I"/home/mustafa/tizen-sdk/library" -I"/home/mustafa/tizen-sdk/platforms/tizen2.0/rootstraps/tizen-emulator-2.0.cpp.partner/usr/include/osp" -D_APP_LOG -MMD -MP -MF"src/cantataPanelFactory.d" -MT"src/cantataPanelFactory.d" -o "src/cantataPanelFactory.o" "../src/cantataPanelFactory.cpp"
+
+mkdir -p "$TARGET/bin"
+
+i386-linux-gnueabi-g++ -o"$TARGET/bin/cantata.exe"  ./src/cantata.o ./src/cantataEntry.o ./src/cantataFormFactory.o ./src/cantataFrame.o ./src/cantataMainForm.o ./src/cantataPanelFactory.o    -L"/home/mustafa/work/tizenschools/cantata-native/lib" -Xlinker --as-needed -pie -lpthread -Xlinker -rpath=\$ORIGIN/.. -Xlinker -rpath=\$ORIGIN/../lib --sysroot="/home/mustafa/tizen-sdk/platforms/tizen2.0/rootstraps/tizen-emulator-2.0.cpp.partner" -L"/home/mustafa/tizen-sdk/platforms/tizen2.0/rootstraps/tizen-emulator-2.0.cpp.partner/usr/lib" -L"/home/mustafa/tizen-sdk/platforms/tizen2.0/rootstraps/tizen-emulator-2.0.cpp.partner/usr/lib/osp" -losp-appfw -losp-uifw -losp-image -losp-json -losp-ime -losp-net -lpthread -losp-content -losp-locations -losp-telephony -losp-uix -losp-media -losp-messaging -losp-web -losp-social -losp-wifi -losp-bluetooth -losp-nfc -losp-face -losp-speech-tts -losp-speech-stt -losp-shell -losp-shell-core -lxml2
+
+cp $DIR_HOME/manifest.xml $TARGET
+cp -R $DIR_HOME/res $TARGET
+cp -R $DIR_HOME/lib $TARGET
+cp -R $DIR_HOME/icons $TARGET
+cp -R $DIR_HOME/data $TARGET
+
+cd ../
+echo "Finished building target: cantata.exe"
+echo "**** Build Finished ****"
+
