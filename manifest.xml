@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Manifest xmlns="http://schemas.tizen.org/2012/06/manifest">
+    <Id>XjBNbH9LsP</Id>
+    <Version>1.0.0</Version>
+    <Type>C++App</Type>
+    <Vendors/>
+    <Descriptions/>
+    <Url/>
+    <Requirements>
+        <Feature Name="http://tizen.org/feature/platform.core.cpu.arch">x86</Feature>
+    </Requirements>
+    <Apps>
+        <ApiVersion>2.1</ApiVersion>
+        <Secret/>
+        <Privileges/>
+        <UiApp Default="True" ExecutableName="cantata" MainmenuVisible="True">
+            <UiScalability BaseScreenSize="Normal" CoordinateSystem="Logical" LogicalCoordinate="720"/>
+            <UiTheme SystemTheme="White"/>
+            <Names>
+                <Name Locale="eng-GB">cantata</Name>
+            </Names>
+            <Icons>
+                <Icon Section="MainMenu" Type="Xhigh">mainmenu.png</Icon>
+            </Icons>
+            <AppControls/>
+            <LaunchConditions/>
+            <Notifications/>
+        </UiApp>
+    </Apps>
+</Manifest>
